@@ -1,5 +1,7 @@
 # N3Proof
 
+> **⚠️ IMPORTANT:** This project was entirely created by generative AI (Claude 3.7 Sonnet). It has not been reviewed or verified by human developers and may contain errors, bugs, or security issues. Use at your own risk.
+
 A Notation3 (N3) proof engine implemented in Rust.
 
 ## Overview
