@@ -1,0 +1,22 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Documentation builds
+/doc/
+
+# Debug logs
+debug/
+*.log
+
+# Local environment files
+.env
+.env.local 
