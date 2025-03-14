@@ -1,0 +1,26 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix : <http://example.org/socrates#>.
+
+# Axioms
+:Socrates a :Human.
+:Human rdfs:subClassOf :Mortal.
+
+# The rule stating that subClassOf is transitive
+{
+    ?S a ?A .
+    ?A rdfs:subClassOf ?B . 
+} => {
+    ?S a ?B .
+}.
+
+# Proof step
+:Socrates a :Mortal.
+
+# Proof explanation
+{
+    :Socrates a :Human.
+    :Human rdfs:subClassOf :Mortal.
+} log:implies {
+    :Socrates a :Mortal.
+}. 
